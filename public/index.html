@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html ng-app="todoApp">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Todo App</title>
+
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./stylesheets/custom.css">
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><!-- load jquery -->
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular.js"></script><!-- load angular 1.2.4 -->
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular-route.min.js"></script> <!-- load angular-route -->
+	<script src="js/controllers/main.js"></script> <!-- load up our controller -->
+	<script src="js/services/todos.js"></script> <!-- load our todo service -->
+	<script src="js/core.js"></script> <!-- load our main application -->
+</head>
+
+<body ng-controller="mainController">
+	<div class="container">
+
+		<!-- HEADER -->
+		<div class="jumbotron text-center">
+			<h1>Todo App <span class="label label-info">{{ todos.length }}</span></h1>
+		</div>
+
+		<!-- TODO LIST -->
+		<div id="todo-list" class="row">
+			<div class="col-sm-4 col-sm-offset-4">
+
+				<div class="checkbox" ng-repeat="todo in todos">
+					<label>
+						<input type="checkbox" ng-click="deleteTodo(todo._id)"> {{ todo.text }}
+					</label>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- FORM TO CREATE TODOS -->
+		<div id="todo-form" class="row">
+			<div class="col-sm-8 col-sm-offset-2 text-center">
+				<form>
+					<div class="form-group">
+
+						<!-- BIND INPUT VALUE TO formData.text in Angular model -->
+						<input type="text" class="form-control input-lg text-center" placeholder="Enter new todo" ng-model="formData.text">
+					</div>
+
+					<!-- createtodo() WILL CREATE A NEW TODO -->
+					<button type="submit" class="btn btn-primary btn-lg" ng-click="createTodo()">Add</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

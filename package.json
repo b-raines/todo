@@ -1,0 +1,50 @@
+{
+  "name": "todo-app",
+  "description": "basic todo app",
+  "version": "1.0.0",
+  "private": false,
+  "author": "Brent Raines",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/b-raines/mean-todo-app"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.3.x"
+  },
+  "scripts": {
+    "start": "node node_modules/grunt-cli/bin/grunt",
+    "test": "node node_modules/grunt-cli/bin/grunt test",
+    "postinstall": "node node_modules/bower/bin/bower install"
+  },
+  "dependencies": {
+    "express": "~3.4.7",
+    "jade": "~1.0.2",
+    "consolidate": "~0.10.0",
+    "mongoose": "~3.8.3",
+    "connect-mongo": "~0.4.0",
+    "lodash": "~2.4.1",
+    "view-helpers": "~0.1.4",
+    "mean-logger": "0.0.1",
+    "bower": "~1.2.8",
+    "grunt": "~0.4.2",
+    "grunt-cli": "~0.1.11",
+    "grunt-env": "~0.4.1",
+    "forever": "~0.10.11",
+    "should": "2.1.1",
+    "grunt-concurrent": "~0.4.2",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-nodemon": "0.1.2"
+  },
+  "devDependencies": {
+    "nodeunit": "latest",
+    "supertest": "0.8.2",
+    "should": "2.1.1",
+    "grunt-contrib-watch": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-nodemon": "0.1.2",
+    "grunt-concurrent": "latest",
+    "grunt-contrib-nodeunit": "~0.3.1"
+  }
+}
