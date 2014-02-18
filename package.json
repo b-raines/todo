@@ -48,6 +48,6 @@
     "grunt-contrib-watch": "latest",
     "grunt-contrib-jshint": "latest",
     "grunt-nodemon": "0.1.2",
-    "grunt-concurrent": "latest",
+    "grunt-concurrent": "latest"
   }
 }
