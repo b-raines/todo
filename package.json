@@ -39,12 +39,6 @@
     "fsevents": "~0.2.0"
   },
   "devDependencies": {
-    "supertest": "0.8.2",
-    "phantomjs": "latest",
-    "karma": "latest",
-    "karma-junit-reporter": "latest",
-    "karma-jasmine": "latest",
-    "jasmine-node": "latest",
     "should": "2.1.1",
     "grunt-contrib-watch": "latest",
     "grunt-contrib-jshint": "latest",
