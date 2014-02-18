@@ -37,8 +37,7 @@
     "grunt-contrib-jshint": "~0.8.0",
     "grunt-nodemon": "0.1.2",
     "grunt-karma": "latest",
-    "logfmt": "~0.21.0",
-    "crypto": "0.0.3"
+    "logfmt": "~0.21.0"
   },
   "devDependencies": {
     "supertest": "0.8.2",
