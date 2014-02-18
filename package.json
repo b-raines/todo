@@ -35,11 +35,17 @@
     "should": "2.1.1",
     "grunt-concurrent": "~0.4.2",
     "grunt-contrib-jshint": "~0.8.0",
-    "grunt-nodemon": "0.1.2"
+    "grunt-nodemon": "0.1.2",
+    "grunt-karma": "latest"
   },
   "devDependencies": {
-    "jasmine": "latest",
     "supertest": "0.8.2",
+    "phantomjs" : "latest",
+    "karma" : "latest",
+    "karma-junit-reporter" : "latest",
+    "karma-jasmine" : "latest",
+    "jasmine-node": "latest",
+    "protractor" : "latest",
     "should": "2.1.1",
     "grunt-contrib-watch": "latest",
     "grunt-contrib-jshint": "latest",

@@ -7,5 +7,10 @@ body {
 }
 
 #todo-list {
-	margin-bottom: 30px;
+	margin: 0 auto 30px;
+	font-size: 16px;
+}
+
+.todos {
+	margin-left: 30px;
 }

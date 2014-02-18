@@ -30,11 +30,14 @@
 		<div id="todo-list" class="row">
 			<div class="col-sm-4 col-sm-offset-4">
 
-				<div class="checkbox" ng-repeat="todo in todos">
-					<label>
-						<input type="checkbox" ng-click="deleteTodo(todo._id)"> {{ todo.text }}
-					</label>
-				</div>
+				<ol>
+					<div class="checkbox" ng-repeat="todo in todos">
+						<input type="checkbox" ng-click="deleteTodo(todo._id)"> 
+						<li class="todos">
+							{{ todo.text }}
+						</li>
+					</div>
+				</ol>
 
 			</div>
 		</div>

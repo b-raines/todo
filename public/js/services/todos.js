@@ -1,4 +1,4 @@
-angular.module('todoService', [])
+angular.module('todoApp.services', [])
 	
 	// each function returns a promise object
 	.factory('Todos', function($http) {
